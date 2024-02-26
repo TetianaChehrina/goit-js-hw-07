@@ -31,7 +31,7 @@ const images = [
 const ulEl = document.querySelector(".gallery");
 images.forEach(function (image) {
   const itemEl = document.createElement("li");
-  itemEl.classList.add("animals-item");
+  itemEl.classList.add("item");
   const imageEl = document.createElement("img");
  imageEl.src = image.url;
   imageEl.alt = image.alt;
@@ -40,5 +40,6 @@ images.forEach(function (image) {
   imageEl.height=300;
   itemEl.appendChild(imageEl);
   ulEl.appendChild(itemEl);
- // itemEl.insertAdjacentHTML('beforeend', imageEl);
 });
+
+

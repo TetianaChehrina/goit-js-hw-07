@@ -1,7 +1,3 @@
-// let quantityLength = document.querySelector('ul').children.length;
-// let quantityLength = document.getElementById('categories').childNodes.length;
-
-
 const categoriesItems = document.querySelectorAll("li.item");
 console.log(`Number of categories: ${categoriesItems.length}`);
 
