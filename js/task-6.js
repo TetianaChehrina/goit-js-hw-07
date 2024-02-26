@@ -11,8 +11,9 @@ const boxesContainer = document.querySelector('#boxes');
 
 createBtn.addEventListener('click', createBoxes);
 function createBoxes(amount) {
- boxesContainer.innerHTML = "";
- boxsize = 30;
+  boxesContainer.innerHTML = "";
+  let boxsize = 30;
+//  boxsize = 30;
   amount = input.valueAsNumber;
   for (let i = 1; i <= amount; i += 1) {
     newDiv = `<div class=randomBox style="width: ${boxsize}px; height: ${boxsize}px; background: ${getRandomHexColor()}"></div>`;
