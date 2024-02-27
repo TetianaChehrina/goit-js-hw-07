@@ -11,3 +11,4 @@ function handleClick(event) {
   const colorSpan = document.querySelector(".color");
   colorSpan.textContent = getRandomHexColor();
 }
+

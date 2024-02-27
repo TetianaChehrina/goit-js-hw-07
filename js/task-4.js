@@ -17,3 +17,15 @@ function handleSubmit(event) {
   event.currentTarget.reset();
 }
 
+const btn = document.querySelector('button');
+btn.classList.add('submit-btn');
+
+const labelEl = document.querySelectorAll('label');
+labelEl.forEach(element => element.classList.add('form-label'))
+
+const inputEl = document.querySelectorAll('input');
+inputEl.forEach(element => element.classList.add('form-input'))
+const inputEmail = document.querySelector('[name="email"]');
+inputEmail.placeholder = 'Type area';
+
+
