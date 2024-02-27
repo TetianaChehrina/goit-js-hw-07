@@ -90,13 +90,14 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  width: 1440px;
+  width: 1128px;
   gap: 24px;
-  /* flex-basis: calc((100% - 72px) / 3) */
-  background: #fff;
-  justify-content: center;
 }
-
+.i-item {
+  width: 300px;
+  height: 200px;
+  list-style-type: none;
+}
 /* Задача 3 */
 .title-input {
   font-family: "Montserrat", sans-serif;
@@ -182,35 +183,20 @@ body {
 /* Завдання 5 */
 .widget {
   border-radius: 8px;
-  padding: 100px 88px;
   width: 345px;
   height: 280px;
-  background: #fff;
-}
-
-.color {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
+  padding-top: 100px;
+  padding-left: 200px;
 }
 
 .change-color {
-  border-radius: 8px;
-  padding: 8px 16px;
   width: 148px;
   height: 40px;
-  background: #4e75ff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  border: none;
 }
-
 /* Завдання 6 */
 #controls {
   border-radius: 8px;
@@ -223,7 +209,7 @@ body {
 .input-item {
   border: 1px solid #808080;
   border-radius: 8px;
-  padding: 8px ;
+  padding: 8px;
   width: 150px;
   height: 40px;
   font-family: "Montserrat", sans-serif;

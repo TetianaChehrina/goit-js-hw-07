@@ -2,20 +2,25 @@ const input = document.querySelector('input');
 const createBtn = document.querySelector('[data-create]');
 const destroyBtn = document.querySelector('[data-destroy]');
 const boxesContainer = document.querySelector('#boxes');
+const controlsEl = document.querySelector("#controls");
+destroyBtn.addEventListener('click', destroyBoxes);
 createBtn.addEventListener('click', () => {
   let amount = input.valueAsNumber;
   createBoxes(amount);
+  controlsEl.firstElementChild.value = "";
 });
-destroyBtn.addEventListener('click', destroyBoxes);
 function createBoxes(amount) {
   boxesContainer.innerHTML = "";
   let boxsize = 30;
   for (let i = 1; i <= amount; i += 1) {
-    const newDiv = `<div class="randomBox" style="width: ${boxsize}px; height: ${boxsize}px; background: ${getRandomHexColor()}"></div>`;
-    boxesContainer.insertAdjacentHTML("beforeend", newDiv);
-    boxsize += 10;
-  }
+    if (amount >= 1 && amount <= 100) {
+      const newDiv = `<div class="randomBox" style="width: ${boxsize}px; height: ${boxsize}px; background: ${getRandomHexColor()}"></div>`;
+      boxesContainer.insertAdjacentHTML("beforeend", newDiv);
+      boxsize += 10;
+    }
+  } 
 }
+
 function destroyBoxes() {
   boxesContainer.innerHTML = '';
 }

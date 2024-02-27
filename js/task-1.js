@@ -29,15 +29,3 @@ nextItemEl.classList.add('menu-title-list');
 
 
 
-
-
-// const linextElementSibling = nextElementSibling.querySelector('li')
-// linextElementSibling.classList.add('list-item')
-
-
-
-// const liEl = listEl.querySelectorAll("li");
-// liEl.forEach(element => element.classList.add('list-item-element'));
-
-// const firstTitleSibling = h2.nextElementSibling;
-// console.log(firstTitleSibling);
