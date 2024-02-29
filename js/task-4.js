@@ -24,7 +24,6 @@ labelEl.forEach(element => element.classList.add('form-label'))
 
 const inputEl = document.querySelectorAll('input');
 inputEl.forEach(element => element.classList.add('form-input'))
-const inputEmail = document.querySelector('[name="email"]');
-inputEmail.placeholder = 'Type area';
+
 
 

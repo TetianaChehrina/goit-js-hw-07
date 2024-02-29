@@ -10,16 +10,19 @@ createBtn.addEventListener('click', () => {
   controlsEl.firstElementChild.value = "";
 });
 function createBoxes(amount) {
-  boxesContainer.innerHTML = "";
+  if (amount <= 0 || amount >= 100) {
+    boxesContainer.innerHTML = "";
+  } else
+  {
   let boxsize = 30;
   for (let i = 1; i <= amount; i += 1) {
-    if (amount >= 1 && amount <= 100) {
-      const newDiv = `<div class="randomBox" style="width: ${boxsize}px; height: ${boxsize}px; background: ${getRandomHexColor()}"></div>`;
+     {const newDiv = `<div class="randomBox" style="width: ${boxsize}px; height: ${boxsize}px; background: ${getRandomHexColor()}"></div>`;
       boxesContainer.insertAdjacentHTML("beforeend", newDiv);
       boxsize += 10;
     }
-  } 
+  }}
 }
+boxesContainer.innerHTML = "";
 
 function destroyBoxes() {
   boxesContainer.innerHTML = '';

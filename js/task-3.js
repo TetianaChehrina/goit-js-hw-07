@@ -1,5 +1,6 @@
 const span = document.querySelector('#name-output')
-const input = document.querySelector('#name-input').addEventListener("input", handlerInput)
+const input = document.querySelector('#name-input');
+input.addEventListener("input", handlerInput);
 function handlerInput(event) {
   span.textContent = event.target.value.trim() || 'Anonymous'
 }
